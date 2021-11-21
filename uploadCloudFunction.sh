@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-8g906yl0fd47557d --n quickstartFunctions --r --project "/Users/ava/workspace/miniprogram/muses" --report_first --report

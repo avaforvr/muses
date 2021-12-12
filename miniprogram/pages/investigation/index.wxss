@@ -1,0 +1,30 @@
+page {
+  padding: 60rpx 30rpx;
+  background-color: #ffffff;
+}
+.investigation-name {
+  margin-bottom: 40rpx;
+  font-size: 60rpx;
+  text-align: center;
+}
+.qa {
+  margin-bottom: 60rpx;
+}
+.qa-label {
+  margin-bottom: 40rpx;
+  font-weight: 500;
+}
+.option {
+  display: block;
+  margin-bottom: 20rpx;
+}
+.btns {
+  display: flex;
+  padding-top: 20rpx;
+}
+.btn-submit, .btn-reset {
+  width: 40% !important;
+}
+.submit-params {
+  margin-top: 60rpx;
+}

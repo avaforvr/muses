@@ -1,0 +1,27 @@
+<view class="investigation-name">{{name}}</view>
+
+<form bindsubmit="formSubmit">
+    <view class="qa" wx:for="{{list}}" wx:for-item="qa" wx:key="gid">
+        <view class="qa-label required">{{index+1}}. {{qa.name}}</view>
+        <radio-group wx:if="{{qa.itemType == 'radio'}}" name="{{qa.gid}}">
+            <label wx:for="{{qa.itemValue}}" wx:for-item="option" wx:key="option" class="option">
+                <radio value="{{option}}" />{{option}}
+            </label>
+        </radio-group>
+
+        <checkbox-group wx:else="{{qa.itemType == 'checkbox'}}" name="{{qa.gid}}">
+            <label wx:for="{{qa.itemValue}}" wx:for-item="option" wx:key="option" class="option">
+                <checkbox value="{{option}}" />{{option}}
+            </label>
+        </checkbox-group>
+    </view>
+
+    <view class="btns">
+        <button formType="submit" type="primary" class="btn-submit" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+            提交
+        </button>
+        <button formType="reset" class="btn-reset">重置</button>
+    </view>
+</form>
+
+<view class="submit-params"><pre>{{submitParams}}</pre></view>

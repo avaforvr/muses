@@ -1,0 +1,12 @@
+function tapName(event, ownerInstance) {
+    console.log('tap Weixin', JSON.stringify(event))
+  }
+  module.exports = {
+    tapName: tapName,
+    touchmove: function(event, instance) {
+        console.log('log event', JSON.stringify(event))
+    },
+    propObserver: function(newValue, oldValue, ownerInstance, instance) {
+        console.log('prop observer', newValue, oldValue)
+    }
+  }
